@@ -1,20 +1,21 @@
 #include <stdio.h>
 /**
- * main - prints numbers between 0 to 9 and letters between a to f
- * Return: 0
- */
+  *main - staring function
+  *
+  *Description: printing hexadecimal numbers.
+  *
+  *Return: 0
+  */
 int main(void)
 {
-        int i;
-        for (i = 48; i <58; i++)
-        {
-                putchar(i);
-        }
-        for (i = 97; i < 103; i++)
-        {
-                putchar(i);
-        }
-        putchar('\n');
-        return (0);
-}
-~                             
+	int f;
+	char let;
+
+	for (f = '0'; f <= '9'; f++)
+	putchar(f);
+
+	for (let = 'a'; let <= 'f'; let++)
+	putchar(let);
+	putchar('\n');
+	return (0);
+} 
