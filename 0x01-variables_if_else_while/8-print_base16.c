@@ -1,11 +1,11 @@
 #include <stdio.h>
 /**
-  *main - staring function
-  *
-  *Description: printing hexadecimal numbers.
-  *
-  *Return: 0
-  */
+ *main - staring function
+ *
+ *Description: printing hexadecimal numbers.
+ *
+ *Return: 0
+ */
 int main(void)
 {
 	int f;
@@ -18,4 +18,4 @@ int main(void)
 	putchar(let);
 	putchar('\n');
 	return (0);
-} 
+}
