@@ -1,24 +1,26 @@
 #include <stdio.h>
 /**
- * main - prints all posssible cOmbinations of two digits
- * Return: 0
- */
+  *main - starting function
+  *
+  *Description: printing possible combinations of two digits
+  *
+  *Return: 0
+  */
 int main(void)
 {
-	int n, m;
-	for (n = 48; n <= 56; n++)
+	int i, j
+		;
+	for (i = 0; i < 10; i++)
 	{
-		for (m = 49; m <= 57; m++)
+		for (j = i + 1; j < 10; j++)
 		{
-			if (m > n)
+			putchar(i + '0');
+			putchar(j + '0');
+
+			if (i < 8 || j < 9)
 			{
-				putchar(n);
-				putchar(m);
-				if (n != 56 || m != 57)
-				{
-					putchar(',');
-					putchar('');
-				}
+				putchar(',');
+				putchar(' ');
 			}
 		}
 	}
