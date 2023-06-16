@@ -1,15 +1,17 @@
 #include <stdio.h>
 /**
- * main - prints numbers between 0 to 9
- * Return: 0
- */
+  *main - starting function
+  *
+  *Description: printing numbers using putchar and not using the char variable.
+  *
+  *Return: 0
+  */
 int main(void)
 {
-        int i;
-        for (i = 48; i <58; i++)
-        {
-                putchar(i);
-        }
+	int i;
+
+	for (i = 0; i < 10; i++)
+	putchar(i + '0');
 	putchar('\n');
 	return (0);
 }
